@@ -1,14 +1,16 @@
 package com.arkansascodingacademy;
 
+import java.util.Random;
+
 public class Game
 {
     private Numbers numbers;
-    private Card card;
+    private RandomCard card;
 
     public Game()
     {
-        numbers = new Numbers();
-        card = new Card();
+        numbers = new Numbers(1, 75);
+        card = new RandomCard();
     }
     public void play()
     {
