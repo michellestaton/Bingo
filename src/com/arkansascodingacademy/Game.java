@@ -13,7 +13,7 @@ public class Game
         numbers = new Numbers(1, 75);
         cards = new ArrayList<>();
 
-        for (int cardNumber = 1; cardNumber <= 10; cardNumber++)
+        for (int cardNumber = 1; cardNumber <= 100; cardNumber++)
         {
             RandomCard card = new RandomCard();
             cards.add(card);
@@ -36,7 +36,7 @@ public class Game
                 if (card.bingo())
                 {
                     bingo = true;
-                    printWinningCards();
+
                 }
             }
 
